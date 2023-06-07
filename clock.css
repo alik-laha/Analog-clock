@@ -64,17 +64,18 @@ body{
     display: flex;
     left: 271px;
     transform-origin: left;
+    box-shadow: 0 0 20px var(--clr);
 }
 
-.hour{
+#hour{
     width: 135px;
     height: 9px;
 }
-.mini{
+#mini{
     width: 155px;
     height: 6px;
 }
-.sec{
+#sec{
     width: 175px;
     height: 4px;
 }
