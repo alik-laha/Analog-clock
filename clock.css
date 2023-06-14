@@ -1,30 +1,30 @@
-body{
+body {
     margin: 0;
     box-sizing: border-box;
     background-color: #282828;
-  text-align: center;   
+    text-align: center;
 }
 
-.clock{
+.clock {
     display: flex;
     position: relative;
     justify-content: center;
     flex: 1;
     min-height: 100vh;
     align-items: center;
-   
+
 }
 
-.main{
+.main {
     width: 30rem;
     height: 30rem;
     position: relative;
     border: 7px solid #282828;
     padding: 2rem;
-    box-shadow: -4px -4px 10px rgba(67,67,67,0.5),
-                inset 4px 4px 10px rgba(0,0,0,0.5),
-                inset -4px -4px 10px rgba(67,67,67,0.5),
-                4px 4px 10px rgba(0,0,0,0.3);
+    box-shadow: -4px -4px 10px rgba(67, 67, 67, 0.5),
+        inset 4px 4px 10px rgba(0, 0, 0, 0.5),
+        inset -4px -4px 10px rgba(67, 67, 67, 0.5),
+        4px 4px 10px rgba(0, 0, 0, 0.3);
     margin: 50px auto;
     border-radius: 50%;
     align-items: center;
@@ -41,25 +41,25 @@ body{
     border: 2px solid white;
     border-radius: 50%;
     background-color: white;
-    
+
 }
 
-.num{
+.num {
     position: absolute;
     inset: 20px;
     text-align: center;
     color: white;
     font-size: 25px;
-     transform: rotate(calc(30deg*var(--i))); 
+    transform: rotate(calc(30deg*var(--i)));
 }
 
-.num b{
+.num b {
     display: inline-block;
     transform: rotate(calc(-30deg*var(--i)));
 
 }
 
-.hand{
+.hand {
     background-color: var(--clr);
     position: absolute;
     display: flex;
@@ -68,32 +68,31 @@ body{
     box-shadow: 0 0 20px var(--clr);
 }
 
-#hour{
+#hour {
     width: 135px;
     height: 9px;
 }
-#mini{
+
+#mini {
     width: 155px;
     height: 6px;
 }
-#sec{
+
+#sec {
     width: 175px;
     height: 4px;
 }
-.digital{
+
+.digital {
     position: relative;
     border: 7px solid #282828;
-    box-shadow: -4px -4px 10px rgba(67,67,67,0.5),
-    inset 4px 4px 10px rgba(0,0,0,0.5),
-    inset -4px -4px 10px rgba(67,67,67,0.5),
-    4px 4px 10px rgba(0,0,0,0.3);
+    box-shadow: -4px -4px 10px rgba(67, 67, 67, 0.5),
+        inset 4px 4px 10px rgba(0, 0, 0, 0.5),
+        inset -4px -4px 10px rgba(67, 67, 67, 0.5),
+        4px 4px 10px rgba(0, 0, 0, 0.3);
     height: 700px;
     border-top-left-radius: 45%;
     border-top-right-radius: 45%;
     border-bottom-left-radius: 80px;
     border-bottom-right-radius: 80px;
 }
-
-
-
-
