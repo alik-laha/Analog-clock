@@ -30,7 +30,7 @@ body {
     align-items: center;
     justify-content: center;
     display: flex;
-    top: -60px;
+    top: -80px;
 }
 
 .main::before {
@@ -91,8 +91,26 @@ body {
         inset -4px -4px 10px rgba(67, 67, 67, 0.5),
         4px 4px 10px rgba(0, 0, 0, 0.3);
     height: 700px;
-    border-top-left-radius: 45%;
-    border-top-right-radius: 45%;
+    width: 660px;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
     border-bottom-left-radius: 80px;
     border-bottom-right-radius: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#digi {
+    background: -webkit-linear-gradient(#22f00b, #0acbf1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.3em;
+    bottom: 40px;
+    position: absolute;
+}
+
+.analog {
+    position: absolute;
+    top: 55px;
 }
