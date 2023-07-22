@@ -38,18 +38,19 @@ body {
     position: absolute;
     width: 8px;
     height: 8px;
-    border: 2px solid white;
+    border: 2px solid rgb(255, 255, 255);
     border-radius: 50%;
-    background-color: white;
-
+    background-color: rgb(255, 255, 255);
+    z-index: 23;
 }
 
 .num {
     position: absolute;
     inset: 20px;
     text-align: center;
-    color: white;
-    font-size: 25px;
+    color: rgb(207, 203, 203);
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
     transform: rotate(calc(30deg*var(--i)));
 }
 
@@ -104,6 +105,7 @@ body {
 #digi {
     background: -webkit-linear-gradient(#22f00b, #0acbf1);
     -webkit-background-clip: text;
+    font-family: 'Orbitron', sans-serif;
     -webkit-text-fill-color: transparent;
     font-size: 2.3em;
     bottom: 40px;

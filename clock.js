@@ -14,6 +14,12 @@ setInterval(() => {
     let time = new Date();
     let hour = time.getHours();
     let min = time.getMinutes();
+    let sec = time.getSeconds();
+    let sp = " "
+    if (sec % 2 == 0) {
+        sp = ":"
+    }
+
     let am_pm = "AM";
     if (hour > 12) {
         hour -= 12;
@@ -24,10 +30,10 @@ setInterval(() => {
         am_pm = "AM";
     }
 
+
     hour = hour < 10 ? "0" + hour : hour;
     min = min < 10 ? "0" + min : min;
 
-    let c = hour + ":"
-        + min + " " + am_pm;
+    let c = hour + "  " + sp + "  " + min + " " + am_pm;
     document.getElementById("digi").innerHTML = c;
 }, 1000);
