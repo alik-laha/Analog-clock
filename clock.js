@@ -15,7 +15,7 @@ setInterval(() => {
     let hour = time.getHours();
     let min = time.getMinutes();
     let sec = time.getSeconds();
-    let sp = " "
+    let sp = "&nbsp;"
     if (sec % 2 == 0) {
         sp = ":"
     }
